@@ -1,0 +1,118 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #fff2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgb(230, 230, 164);
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.add-task {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border-color: #45a049;
+}
+
+#add {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#add:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  align-items: left;
+  margin-left: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.add-task ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#doneList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#doneList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #d9ffd9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#doneList .completed-task {
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: #555;
+}
+
+.lists button {
+  margin-left: auto;
+  margin-left: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+#doneList .completed-task label {
+  text-decoration: line-through;
+  color: #555;
+}
+
+#quantityInput {
+  margin: 10px;
+  width: auto;
+  margin-right: 10px;
+  background-color: white;
+  border-color: #45a049;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+}

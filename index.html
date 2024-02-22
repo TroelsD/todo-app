@@ -1,0 +1,41 @@
+><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Troels' todo app</title>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>Troels' todo app</h1>
+      <div class="add-task">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Hvilken opgave vil du tilføje?"
+        />
+        <input
+          type="number"
+          id="taskQuantity"
+          placeholder="Mængde"
+          min="1"
+          value="1"
+        />
+        <button id="add" onclick="addTask()">Tilføj opgave</button>
+      </div>
+      <div class="lists">
+        <div class="task-list">
+          <h2>Opgaver:</h2>
+          <ul id="taskList"></ul>
+        </div>
+        <div class="done-list">
+          <h2>Udført:</h2>
+          <ul id="doneList"></ul>
+        </div>
+      </div>
+      <div id="feedbackMessage"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
